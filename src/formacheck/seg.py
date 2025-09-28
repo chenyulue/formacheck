@@ -1,6 +1,6 @@
 import hanlp
 
-tok = hanlp.load("COARSE_ELECTRA_SMALL_ZH")
+tok = hanlp.load("FINE_ELECTRA_SMALL_ZH")
 pos = hanlp.load("CTB9_POS_ELECTRA_SMALL")
 tok.config.output_spans = True
 tok.dict_combine = {"所述的", "所述", "上述", "上述的", "前述", "前述的", "该"}
