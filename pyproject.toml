@@ -1,0 +1,27 @@
+[project]
+name = "FormaCheck"
+version = "0.1.0"
+description = "A helper for checking the formal defects in a patent application."
+authors = [{ name = "chenyulue", email = "chenyulue@163.com" }]
+dependencies = [
+    "pyqt5-qt5==5.15.2; platform_system == \"windows\"",
+    "pyqt5>=5.15.11",
+    "hanlp>=2.1.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[dependency-groups]
+test = ["pytest>=8.4.2"]
+
+[tool.pytest.ini_options]
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
